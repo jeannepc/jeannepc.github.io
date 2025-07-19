@@ -3,7 +3,7 @@ layout: project
 type: project
 image:  img/wishy-washy-mobile-design/wishy-washy-logo.png
 title: Wishy Washy Mobile App Design
-permalink: projects/dialectest-mobile-design
+permalink: projects/wishy-washy-mobile-design
 # All dates must be YYYY-MM-DD format!
 date: 2024-08-01
 labels:
