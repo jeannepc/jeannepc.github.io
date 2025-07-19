@@ -15,7 +15,7 @@ summary: "DialecTest: Test your language knowledge"
 ---
 
 <div class="text-center p-4">
-  <img width="1200px" src="../img/dialectest-mobile-design/dialectest-home-page.png" class="img-thumbnail" >
+  <img width="600px" src="../img/dialectest-mobile-design/dialectest-home-page.png" class="img-thumbnail" >
 </div>
 
 <b> Problem Statement:</b> Even with primary education, adults struggle to study for examinations, have a more difficult time learning new languages as they age and not all primary schools emphasize on different ways of effective studying. We need to implement productive and effective study solutions for those learning second, third, or multi languages.
