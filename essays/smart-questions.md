@@ -1,99 +1,90 @@
 ---
 layout: essay
 type: essay
-title: "Smart Questions, Good Answers"
+published: false
+title: "Smart Questions are Important, but Why?"
 # All dates must be YYYY-MM-DD format!
-date: 2015-09-08
-published: true
+date: 2021-09-09
 labels:
+  - Software Engineering
   - Questions
-  - Answers
-  - StackOverflow
+  - Stack Overflow
 ---
 
-<img width="300px" class="rounded float-start pe-4" src="../img/smart-questions/rtfm.png">
+## Looking for Resources
+Before asking someone else a question, try answering it for yourself. Often, people skip this step to avoid time in research, but researching is an important part of effectively learning from a problem. Some ways to find a solution include using the Web, a manual, FAQs, experimentation of code, asking a friend, or reading source code (Raymond). This part takes time, but is most encouraged since you find most of your problems already solved somewhere.
 
-## Is there such thing as a stupid question?
+## Smart Questions Lead to Smart Answers
+If you cannot find your answer anywhere, then this is the perfect time to ask about it. Preparing your question is important to get answers that you need. If a question is broad and difficult to understand, the answer will most likely be broad and difficult to understand. 
 
-I’ve had instructors address a whole class and say, “There’s no such thing as a stupid question.” I now know that is in fact not true because I’ve challenged the statement and received the appropriate dumb-stricken, annoyed look. There are definitely stupid questions, and along with that, usually unhelpful answers. Though we all might be guilty of being callous and making people victim to our poorly formed questions, there are steps we can take to ask smarter questions that hopefully don’t illicit the dreaded “rtfm” or “stfw” response.
+## Protocols
+In most software engineering and development, we adhere to protocols, like Hypertext Transfer Protocol (HTTP). Asking questions in the community should stick to some of these guidelines for the best solution.
+#### Relevant Forum
+You will want to post your question to a forum that is relevant (e.g. topic and skill level). Relevance is important to get the best answers from people who know best in that topic. 
+#### Post Once
+Avoid posting in many forums since it is redundant. You may be urgently attempting to find a solution for something that is due soon; still, adhere to this protocol. Your urgency is a personal problem and is selfish.
+#### Post Publicly
+avoid making your problem too personal (e.g. a personal email). Online forums are used by the community, so write to the community. With that being said, your post should have minimal grammatical errors since it is open to the entire community. Don’t make a fool out of yourself. The way you post is a depiction of yourself, so be courteous.
+#### Know your Topic and Problem
+You will need to know about your topic. Not knowing enough about your topic will make it difficult to understand solutions following your question. You must be able to explain your problem: be specific. If you have already troubleshooted part of your question, include that as context in your entire question. Hackers like answering questions to people who are dedicated to learning from a problem instead of looking for an easy way out of a problem. This dedication is shown in your troubleshooting context.
+#### Thank Yous
+Someone took time out of their day to help you. It is important to acknowledge that and thank them for their time. Following up after a solution is posted could include how your problem turned out and a thank you.
 
-## What’s a smart question?
+## Stack Exchange
+There are different sites to post on Stack Exchange, but here are the most important ones, according to Eric Steven Raymond:
+* Super User is for general computing: posts unrelated to code.
+* Stack Overflow is for questions about programming
+* Server Fault is for questions about server and network administration
 
-Stack Overflow, a question and answer site for programmers, is a great resource for anyone who may have issues with code or who may simply want to learn new or different methods of doing something. There I found examples of good questions and bad questions, which could probably be improved.
-
-In the following example, we examine the components of a decent question. In this case, the asker is trying to figure out a way to get the date of the previous month in Python.
-
+## Example of a Smart Question
+Here is an example of a smart question asked on Stack Overflow [https://stackoverflow.com/questions/61162153/how-to-pass-string-literal-into-a-filter-function-in-javascript](https://stackoverflow.com/questions/61162153/how-to-pass-string-literal-into-a-filter-function-in-javascript).
+> I want to pass a string literal to a filter function.
+the outcome should be
+> 
 ```
-Q: python date of the previous month
-
-I am trying to get the date of the previous month with python. Here is what i've tried:
-
-str( time.strftime('%Y') ) + str( int(time.strftime('%m'))-1 )
-
-However, this way is bad for 2 reasons: First it returns 20122 for the February of 2012 (instead of 201202) 
-and secondly it will return 0 instead of 12 on January.
-
-I have solved this trouble in bash with:
-
-echo $(date -d"3 month ago" "+%G%m%d")
-
-I think that if bash has a built-in way for this purpose, then python, much more equipped, should provide something 
-better than forcing writing one's own script to achieve this goal. Of course i could do something like:
-
-if int(time.strftime('%m')) == 1:
-    return '12'
-else:
-    if int(time.strftime('%m')) < 10:
-        return '0'+str(time.strftime('%m')-1)
-    else:
-        return str(time.strftime('%m') -1)
-        
-I have not tested this code and i don't want to use it anyway (unless I can't find any other way:/)
-
-Thanks for your help!
+filter = data.filter(o => o.tag.toLowerCase().indexOf(("website").toLowerCase()) != -1 && 
+          o.tag.toLowerCase().indexOf(("phone").toLowerCase()) != -1
 ```
-
-While the heading of his question could be better, it does convey what he’s trying to figure out. Usually something as brief as “python date of previous month” is what other users would enter in as search terms on Google, making it easily found. Another good thing about the question is that it’s not just a question. The asker shows what he or she has done and that he or she has put in some effort to answer the question. And while it may not be as important as the question itself, the asker shows courtesy, which does increase the chance of getting an answer.
-
+> What I am currently doing is
+> * Use a for loop to get all the tags in the array
+> * form a string query and perform a filter in the array
+> * the problem is when the filter is passed, it returns everything, meaning the string literal in not working
+> 
 ```
-A: datetime and the datetime.timedelta classes are your friend.
-
-1. find today
-2. use that to find the first day of this month.
-3. use timedelta to backup a single day, to the last day of the previous month.
-4. print the YYYYMM string you're looking for.
-
-Like this:
-
- >>> import datetime
- >>> today = datetime.date.today()
- >>> first = datetime.date(day=1, month=today.month, year=today.year)
- >>> lastMonth = first - datetime.timedelta(days=1)
- >>> print lastMonth.strftime("%Y%m")
- 201202
- >>>
-
-```
- 
-The asker received six possible answers, and he or she was successful in inciting discussion from multiple users. The answers themselves were clear and were devoid of the rumored sarcasm and hostility of “hackers.” Since I myself have referenced this page and found it useful, I can confidently say that it is a good question.
-
-## The foolproof way to get ignored.
-
-While there are decent questions that benefit everyone, there are those one can ask to create an entirely different effect. In the following example, a user asks how he would, in short, create a desktop application with Facebook.
-
-```
-Q: Facebook Desktop Notifier
-
-I am a beginner programmer that have never used anything other than what's included in a language.
-
-I am trying to create a desktop application that notifies me anytime I get an update onfacebook. 
-How should go about doing this? Thanks in advance.
-
-edit Sorry I was not clear. Is there any way to make a DESKTOP application with facebook?
+for (let i = 0; i < values.length; i++) {
+          if (i + 1 >= values.length) { 
+            query = query.concat(' o.tag.toLowerCase().indexOf(("${values[i]}").toLowerCase()) != -1 ');
+          } else {
+            query = query.concat(' o.tag.toLowerCase().indexOf(("${values[i]}").toLowerCase()) != -1 && ');
+          } 
+        }
+let filter = data.filter(o => '${query}');
+        debugger;
 ```
 
-A simple “yes” would have answered the question, but we know that’s not the sort of answer he or she is looking for. Fortunately, someone kindly responded with a link to Facebook’s developer website. The asker should have done more research on his or her potential project. Then further down the road, he or she could have asked more specific and detailed questions that wouldn’t require a thousand-paged response for a sufficient answer.
+> A sample snippet of what I am trying to filter. I want to make this filter function to be dynamic
 
-## Conclusion
+```
+data=[{name:"fpl.xlsx",author:"hello",hits:6,date:"2020-01-01",tag:"logo,website"}
+,{name:"corporate.pptx",author:"hellob",hits:1,date:"2020-02-01",tag:"logo"}, 
+{name:"index.html",author:"hellob",hits:7,date:"2020-02-02",tag:"logo,abc"} 
 
-When we rely on others’ generosity and expertise to provide answers to our questions, it should hold that the question we ask should be one that leads to efficient and effective help that not only benefits us, but also the people we ask and others who might ask the same question in the future. Thus, if you have a question… make it a smart one! Asking questions may not always get you the best answer, but asking them in a way that will make others want to answer them will increase the success of finding a good solution and make it a positive experience on all sides.
+] 
+let filter=[]; 
+filter=data.filter(o=>o.tag.indexOf("logo")!=-1 && o.tag.indexOf("abc")!=-1) 
+console.log(filter);
+```
+
+Overall, this is a good post. I would change the title to something more formal, like “How to Pass a String Literal into a Filter Function in JavaScript” and this post does have some grammatical errors that make this a not-so-smart question.
+The user posted in the correct forum: a coding issue on Stack Overflow. This post includes entire code snippets and clear context of the issue. There is one issue, and the user provides what they are looking for by showing an outcome. The user also provides troubleshooting steps in the “What I am currently doing is” part. This shows that the user knows the problem. Most importantly, the user who posted the question also thanked the answerer in a comment for the answer post.
+
+## Example of a Not-So-Smart Question
+Here is an example of a not-so-smart question asked on Stack Overflow [https://stackoverflow.com/questions/13388161/string-concatenation-in-javascript-with-quote-literals](https://stackoverflow.com/questions/13388161/string-concatenation-in-javascript-with-quote-literals).
+> I am having issues specifying quote literals in JavaScript. How do I create a string that will be equivalent to the following?
+
+```
+<li><a onclick="goSomePlace('SomeName')">SomeName</a></li>
+```
+The user used Stack Overflow to ask their coding question which is perfect. The title does not really relate to the issue. The issue is not concatenating strings, but rather adding quotation marks in a string. A smarter title would be “Quotation Marks in a String in JavaScript”. I also have never heard of the term “quote literal”, but I will assume this is equivalent to string literal. The use of “quote literal” makes it difficult to back search this post and for the community to use this question due to its terminology. I also believe that escaping special characters is something that can be easily found in most JavaScript guides by searching for “escape characters in JavaScript” as this is an important practice to know in any language. The user also does not thank the answerer for taking the time to solve this issue.
+
+
