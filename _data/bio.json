@@ -1,113 +1,168 @@
 {
   "basics": {
-    "name": "Molly Maluhia",
-    "label": "Student",
-    "picture": "https://github.com/kambergjohnson.png",
-    "email": "molly@hawaii.edu",
-    "phone": "808-333-4444",
-    "website": "https://mmaluhia.github.io",
-    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring, 2024.",
-    "location": { "address": "", "postalCode": "96822", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
+    "name": "Jeanne Chan",
+    "label": "Software Engineer and Ceramicist",
+    "picture": "https://github.com/jeannepc.png",
+    "email": "jeannechan2002@gmail.com",
+    "phone": "",
+    "website": "https://jeannepc.github.io",
+    "summary": "Hi! I am an Information Technology Specialist at University of Hawai'i System and a member of Hawai'i Potters' Guild",
+    "location": { "address": "", "postalCode": "", "city": "Wahiawā", "countryCode": "USA", "region": "Hawai'i" },
     "profiles": [
-      { "network": "github", "username": "mmaluhia", "url": "http://github.com/changeme" },
-      { "network": "linkedin", "username": "mollymaluhia", "url": "http://linkedin.com/in/changeme" },
-      { "network": "twitter", "username": "mollymal", "url": "http://twitter.com/changeme" },
-      { "network": "instagram", "username": "molly", "url": "http://instagram.com/changeme" }
+      { "network": "github", "username": "jeannepc", "url": "http://github.com/jeannepc" },
+      { "network": "linkedin", "username": "jeanne-chan", "url": "http://linkedin.com/in/jeanne-chan" },
+      { "network": "instagram", "username": "icykatara", "url": "http://instagram.com/icykatara" }
     ]
   },
   "interests": [
-    { "name": "Interactive media" },
-    { "name": "Neuromorphic Computing" },
-    { "name": "Quantum Computing" },
+    { "name": "Software Engineering" },
     { "name": "Robotics" },
-    { "name": "3D Graphics" }
+    { "name": "Technical Writing" },
+    { "name": "Neuroscience" },
+    { "name": "Handbuilding" },
+    { "name": "Wheelthrowing" },
+    
   ],
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "C", "C++", "Java", "Javascript", "Assembly", "Common Lisp" ]
+      "keywords": [ "C", "C++", "Java", "Javascript", "Assembly", "OCaml", "Python", "Angular", "React Native", "HTML", "Semantic-UI" ]
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "MacOS", "Ubuntu", "Git/GitHub", "g++", "TI LaunchPad" ]
+      "keywords": [ "MacOS", "Ubuntu", "Git/GitHub", "Jira" ]
     }
   ],
   "education": [
     {
-      "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Computer Science (expected Spring, 2018)",
+      "institution": "University of Minnesota, Twin Cities",
+      "area": "Computer Science, minor in Neuroscience",
       "studyType": "B.S.",
-      "startDate": "2013-09-01",
-      "endDate": "Present",
+      "startDate": "2020-09",
+      "endDate": "2022-05",
       "courses": [
       ]
     }
   ],
   "work": [
     {
-      "company": "UH Manoa Board of Publications",
-      "position": "Web Developer",
-      "website": "",
-      "startDate": "2015-08-01",
+      "company": "University of Hawai'i System",
+      "position": "Information Technology Support Specialist and Web Developer",
+      "website": "http://www.hawaii.edu/its/",
+      "startDate": "2023-12",
       "endDate": "Present",
-      "summary": "Head of online presence for Ka Leo",
+      "summary": "",
       "highlights": [
-        "Maintain, update, and oversee official college newspaper website",
-        "Drive, design and build student-community projects for UH Manoa"
+        "Configure and maintain software and security on devices for all 10 campuses in Hawai’i",
+        "Compose and improve technical documentation for internal and external operating procedures",
+        "Modify user data access using BMT",
+        "Developing software using Cascade, XML, Velocity, CSS, and Work Flows",
+        "Manage student staff in the operations center",
+        "Train staff, faculty, and student personnel at assigned departments on use of IT hardware/software, audio/visual, and other peripheral equipment",
+        "Monitor the status, performance, and availability of essential production resources, including the UH network, enterprise systems, ITS Data Center facilities, and scheduled jobs"
       ]
     },
     {
-      "company": "UH Information Technology Services",
-      "position": "Help Desk Consultant",
-      "website": "http://www.hawaii.edu/its/",
-      "startDate": "2015-01-01",
-      "endDate": "2016-03-15",
+      "company": "Army MWR",
+      "position": "Child and Youth Program Assistant",
+      "website": "",
+      "startDate": "2022-09",
+      "endDate": "2022-12",
       "summary": "",
       "highlights": [
-        "Troubleshoot software, hardware and networking issues over the phone",
-        "Answer phone and email responses to the ITS Help Desk"
+        "Maintains control of and accounts for whereabouts and safety of children and youth",
+        "Plans, coordinates, and conducts activities that meet the physical, social, emotional and cognitive needs for program participants based on the group and individual children and youth",
+        "Establishes a program environment that sustains participant interest and promotes positive interactions with other children, youth, and adults",
+        "Maintains program participation data and complete daily report"
+      ]
+    },
+    {
+      "company": "University of Minnesota: Office of Information Technology",
+      "position": "Information Technology Specialist Lead",
+      "website": "https://it.umn.edu/",
+      "startDate": "2020-09",
+      "endDate": "2022-10",
+      "summary": "",
+      "highlights": [
+        "Oversee 90+ student staff, and act as a liaison between student staff, managers, and service owners",
+        "Train new staff and training mentors on standard procedures",
+        "Answer phone calls, chats, emails, and in-person requests assisting anyone affiliated with the University with technical issues",
+        "Documented new procedures",
+        "Lead meetings about updates and news on student staff or repeating requests or issues",
+      ]
+    },
+    {
+      "company": "Jamf",
+      "position": "Software Engineering Intern",
+      "website": "https://jamf.com/",
+      "startDate": "2021-06",
+      "endDate": "2021-08",
+      "summary": "",
+      "highlights": [
+        "Worked alongside senior software engineer in multiple teams primarily using Java, Golang, and Angular",
+        "Implemented new Apple features and maintaining existing services for Jamf Pro",
+        "Refactored the 802.1x certificate authority and signing certificate process",
+        "Attended quality insight meetings with UI/UX designers",
+        "Created a website using Angular"
+      ]
+    },
+    {
+      "company": "Wealshire",
+      "position": "Life Enrichment/Activities Aide",
+      "website": "https://wealshiremn.com/bloomington/",
+      "startDate": "2018-11",
+      "endDate": "2020-10",
+      "summary": "",
+      "highlights": [ 
+        "Conducted and created activities for dementia residents",
+        "Assisted feeding during meal times"
       ]
     }
   ],
   "volunteer": [
     {
-      "organization": "Center for Renewable Energy and Island Sustainability",
-      "website": "http://manoa.hawaii.edu/reis",
-      "position": "Software Developer",
-      "startDate": "2016-01-01",
+      "organization": "Hawai'i Potter Guild",
+      "website": "https://hawaiipottersguild.org/",
+      "position": "Potter/Ceramicist",
+      "startDate": "2022",
       "endDate": "Present",
-      "summary": "Lead developer for weather sensing project",
+      "summary": "Aid in cleaning the studio, loading kilns, and creating art for community events",
       "highlights": [
-        "Design firmware for distributed weather sensor network",
-        "Maintain custom data collection and storage infrastructure"
       ]
     },
     {
-      "organization": "",
+      "organization": "Association for Computing Machinery for Women (ACM-W)",
       "website": "",
-      "position": "Professional organization involvement",
-      "startDate": "",
-      "endDate": "",
+      "position": "Member",
+      "startDate": "2019",
+      "endDate": "2022",
       "summary": "",
       "highlights": [
-        "Chair, ACM Manoa, 2016-Present",
-        "Member, IEEE Student Branch, 2014-Present",
-        "Webmaster/IT Officer, IEEE Student Branch, UH Manoa, 2012-2013"
+      ]
+    },
+    {
+      "organization": "Engineers Without Borders: E-nable",
+      "website": "",
+      "position": "Member",
+      "startDate": "2019",
+      "endDate": "2022",
+      "summary": "Created prosthetic limbs unique for a patient's needs, using a 3D printer",
+      "highlights": [
       ]
     }
   ],
   "awards": [
     {
-      "title": "B+ Scholarship",
-      "date": "2013-Present",
-      "awarder": "State of Hawaii",
-      "summary": "Scholarships awarded to incoming freshmen and continuing students who complete a rigorous high school curriculum with a minimum overall GPA of 3.0 at a Hawai'i public school."
+      "title": "President's Emerging Scholarship",
+      "date": "2020, 2021",
+      "awarder": "University of Minnesota",
+      "summary": "A scholarship awarded to first generation college students who are academically on track for graduation"
     },
     {
-      "title": "First place",
-      "date": "2015",
-      "awarder": "University of Hawaii Micromouse Competition",
-      "summary": "My team won first place in 2015.  See my portfolio site for more details."
+      "title": "Minnesota Aspirations in Computing State Winner",
+      "date": "2020",
+      "awarder": "National Center for Women & IT",
+      "summary": ""
     }
   ],
   "references": [
