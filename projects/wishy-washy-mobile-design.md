@@ -2,7 +2,7 @@
 layout: project
 type: project
 image:  img/wishy-washy-mobile-design/wishy-washy-logo.png
-title: DialecTest Mobile App Design
+title: Wishy Washy Mobile App Design
 permalink: projects/dialectest-mobile-design
 # All dates must be YYYY-MM-DD format!
 date: 2024-08-01
@@ -10,8 +10,8 @@ labels:
   - Mobile Design
   - App
   - Figma
-  - Language
-summary: "DialecTest: Test your language knowledge"
+  - Laundry
+summary: "Wishy Washy: Customize your washer settings"
 ---
 
 <div class="text-center p-4">
