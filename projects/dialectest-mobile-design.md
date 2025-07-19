@@ -24,7 +24,9 @@ Please view entire prototype here: <a href="https://www.figma.com/proto/afUq5js7
 
 <b>Target Audience:</b> This application is for young adults who have finished high school. They are studying for a language test like TOEFL or a college language test. They are not native speakers of the second language, and they are looking to improve their skills and communication in it.
 
-
+<div class="text-center p-4">
+  <img width="1200" src="../img/dialectest-mobile-design/dialectest-overview.png" class="img-thumbnail" >
+</div>
 <br>
 <br>
 <br>
