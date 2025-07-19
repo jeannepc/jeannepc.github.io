@@ -23,6 +23,8 @@ Throughout my two weeks on this project, I was following an Angular tutorial of 
 
 I learned about time management. I wanted to get as many features in this website as possible, so I had to schedule certain hours to work on different tasks. When I didn't have enough time to finish a feature (e.g. the search bar), I moved on to another task, and if I had time, I would go back.
 
+My repository is available here <a href="https://github.com/jeannepc/FirstWebsite/tree/main" target="_blank">https://github.com/jeannepc/FirstWebsite/tree/main</a>
+
 <br>
 <br>
 <br>
